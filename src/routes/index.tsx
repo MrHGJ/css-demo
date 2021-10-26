@@ -1,7 +1,8 @@
-import ColorUiAnimation from '../views/color-ui-animation/index'
-import Home from '../views/home/index'
 import React from 'react'
 import { Route, Switch, HashRouter } from 'react-router-dom'
+import ColorUiAnimation from '@/views/color-ui-animation'
+import Home from '@/views/home'
+
 const CoreRouter = () => {
   return (
     <HashRouter>
