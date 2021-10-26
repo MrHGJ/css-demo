@@ -1,20 +1,52 @@
 @import '../../style/color-ui-animation.scss';
-.color-ui-animation {
+
+@mixin block {
   display: flex;
+  align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  padding: 30px 100px;
-  @mixin block {
+  width: 150px;
+  height: 50px;
+  margin: 20px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.color-ui-animation {
+  .container {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 150px;
-    height: 50px;
-    border-radius: 10px;
+    flex-wrap: wrap;
+    padding: 30px 100px;
   }
   .fade {
     @include block();
     background: #5c2223;
-    color: #fff;
+  }
+  .scale-up {
+    @include block();
+    background: #eea2a4;
+  }
+  .scale-down {
+    @include block();
+    background: #5a191b;
+  }
+  .slide-top {
+    @include block();
+    background: #f07c82;
+  }
+  .slide-bottom {
+    @include block();
+    background: #5a1216;
+  }
+  .slide-left {
+    @include block();
+    background: #ed5a65;
+  }
+  .slide-right {
+    @include block();
+    background: #c04851;
+  }
+  .shake {
+    @include block();
+    background: #ee3f4d;
   }
 }
