@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import cls from 'classnames'
 import './index.scss'
+import { Title } from '@/components/title'
 
 function ColorUiAnimation() {
   const [fade, setFade] = useState(false)
@@ -50,7 +51,7 @@ function ColorUiAnimation() {
 
   return (
     <div className='color-ui-animation'>
-      <div>正向动画</div>
+      <Title title='正向动画' style={{ marginLeft: '100px' }} />
       <div className='container'>
         {renderBlock('fade', 'animation-fade', fade, setFade)}
         {renderBlock('scale-up', 'animation-scale-up', scaleUp, setScaleUp)}
@@ -61,7 +62,7 @@ function ColorUiAnimation() {
         {renderBlock('slide-right', 'animation-slide-right', slideRight, setSlideRight)}
         {renderBlock('shake', 'animation-shake', shake, setShake)}
       </div>
-      <div>反向动画</div>
+      <Title title='反向动画' style={{ marginLeft: '100px' }} />
       <div className='container'>
         {renderBlock('fade', 'animation-fade', fadeReverse, setFadeReverse, true)}
         {renderBlock('scale-up', 'animation-scale-up', scaleUpReverse, setScaleUpReverse, true)}

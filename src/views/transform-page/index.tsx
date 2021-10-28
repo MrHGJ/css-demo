@@ -1,6 +1,8 @@
 import { Title } from '@/components/title'
 import React from 'react'
-import ImgTest from '@/assets/imgs/test.jpeg'
+import ImgBoy from '@/assets/imgs/img-boy.jpeg'
+import ImgFaceFront from '@/assets/imgs/img-face-front.jpg'
+import ImgFaceBack from '@/assets/imgs/img-face-back.jpg'
 import './index.scss'
 
 function TransformPage() {
@@ -17,7 +19,7 @@ function TransformPage() {
         <div className='scaleX'>scaleX</div>
         <div className='scaleY'>scaleY</div>
         <div className='scale'>scale</div>
-        <img className='scale-img' src={ImgTest} />
+        <img className='scale-img' src={ImgBoy} />
       </div>
       <Title title='rotate旋转变换' style={{ marginLeft: '100px' }} />
       <div className='container'>
@@ -30,6 +32,13 @@ function TransformPage() {
         <div className='skewX'>skewX</div>
         <div className='skewY'>skewY</div>
         <div className='skew'>skew</div>
+      </div>
+      <Title title='Demo: 卡片翻转' style={{ marginLeft: '100px' }} />
+      <div className='card-container'>
+        <div className='card'>
+          <img className='card__img card__img__front' src={ImgFaceFront} />
+          <img className='card__img card__img__back' src={ImgFaceBack} />
+        </div>
       </div>
     </div>
   )
