@@ -1,0 +1,127 @@
+@import '@/style/common.scss';
+
+@mixin tansform-block($color:#9eccab) {
+  @include block(100px, 100px);
+  background: $color;
+  transition: all 1s;
+}
+
+.transform-page {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 100px;
+
+    // 位移变换
+    .translateX {
+      @include tansform-block();
+
+      &:hover {
+        transform: translateX(-50px);
+      }
+    }
+
+    .translateY {
+      @include tansform-block();
+
+      &:hover {
+        transform: translateY(-50px);
+      }
+    }
+
+    .translate {
+      @include tansform-block();
+
+      &:hover {
+        transform: translate(-50px, -50px);
+      }
+    }
+
+    // 缩放变换
+    .scaleX {
+      @include tansform-block(#1772b4);
+
+      &:hover {
+        transform: scaleX(2);
+      }
+    }
+
+    .scaleY {
+      @include tansform-block(#1772b4);
+
+      &:hover {
+        transform: scaleY(2);
+      }
+    }
+
+    .scale {
+      @include tansform-block(#1772b4);
+
+      &:hover {
+        transform: scale(0.5, 0.5);
+      }
+    }
+
+    .scale-img {
+      width: 100px;
+      height: 100px;
+      margin: 20px;
+      border-radius: 5px;
+      transition: all 1s;
+
+      &:hover {
+        transform: scale(2, 2);
+      }
+    }
+
+    // 旋转变换
+    .rotateX {
+      @include tansform-block(#fbb612);
+
+      &:hover {
+        transform: rotateX(45deg);
+      }
+    }
+
+    .rotateY {
+      @include tansform-block(#fbb612);
+
+      &:hover {
+        transform: rotateY(45deg);
+      }
+    }
+
+    .rotate {
+      @include tansform-block(#fbb612);
+
+      &:hover {
+        transform: rotate(45deg);
+      }
+    }
+
+    // 倾斜变换
+    .skewX {
+      @include tansform-block(#de7622);
+
+      &:hover {
+        transform: skewX(45deg);
+      }
+    }
+
+    .skewY {
+      @include tansform-block(#de7622);
+
+      &:hover {
+        transform: skewY(45deg);
+      }
+    }
+
+    .skew {
+      @include tansform-block(#de7622);
+
+      &:hover {
+        transform: skew(45deg, 20deg);
+      }
+    }
+  }
+}

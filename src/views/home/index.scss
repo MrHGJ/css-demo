@@ -1,18 +1,20 @@
 .home {
+  &__block {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 100px;
+  }
   .menu {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 30px;
     width: 150px;
-    height: 150px;
+    height: 80px;
+    margin: 15px;
     box-sizing: border-box;
     border-radius: 20px;
     font-size: small;
-
-    &__color-ui {
-      background: #5c2223;
-      color: #fff;
-    }
+    color: #fff;
   }
 }

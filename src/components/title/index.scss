@@ -1,0 +1,16 @@
+.common-title {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+
+  &__block {
+    width: 4px;
+    height: 16px;
+    background: #2b73af;
+  }
+
+  &__content {
+    margin-left: 5px;
+    font-size: 20px;
+  }
+}
