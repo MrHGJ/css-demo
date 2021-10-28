@@ -126,7 +126,7 @@
 
     // transform-origin改变中心点
     .transform-origin-0 {
-      @include tansform-block(#fbb612);
+      @include tansform-block(#ec9bad);
 
       &:hover {
         transform: rotate(45deg);
@@ -134,7 +134,7 @@
     }
 
     .transform-origin-1 {
-      @include tansform-block(#fbb612);
+      @include tansform-block(#ec9bad);
       transform-origin: 0 0;
 
       &:hover {
@@ -143,7 +143,7 @@
     }
 
     .transform-origin-2 {
-      @include tansform-block(#fbb612);
+      @include tansform-block(#ec9bad);
       transform-origin: 50% 100%;
 
       &:hover {
