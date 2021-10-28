@@ -33,6 +33,15 @@ function TransformPage() {
         <div className='skewY'>skewY</div>
         <div className='skew'>skew</div>
       </div>
+      <Title title='transform-origin: 移动变换中心点' style={{ marginLeft: '100px' }} />
+      <div style={{ marginLeft: '100px', fontSize: '14px', color: 'lightgray' }}>
+        说明：改变变换中心点，不影响translate变换，影响其他变换
+      </div>
+      <div className='container'>
+        <div className='transform-origin-0'>50%, 50%</div>
+        <div className='transform-origin-1'>0, 0</div>
+        <div className='transform-origin-2'>50%, 100%</div>
+      </div>
       <Title title='Demo: 卡片翻转' style={{ marginLeft: '100px' }} />
       <div className='card-container'>
         <div className='card'>
