@@ -22,7 +22,8 @@ function Home() {
     <div className='home'>
       <div className='home__block'>
         {renderMenu({ title: 'ColorUI微动画', path: 'color-ui-animation', backColor: '#158bb8' })}
-        {renderMenu({ title: 'transform', path: 'transform-page', backColor: '#b2bbbe' })}
+        {renderMenu({ title: 'transform', path: 'transform-page', backColor: '#40a070' })}
+        {renderMenu({ title: 'transition', path: 'transition-page', backColor: '#fbdf72' })}
       </div>
     </div>
   )
