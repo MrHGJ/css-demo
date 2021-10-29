@@ -110,12 +110,14 @@
         border-radius: 8px;
         background: #efecec;
         color: #060608;
-        opacity: 0;
         transition: all 0.5s ease-out;
+        opacity: 0;
+        pointer-events: none;
         transform: translate(30%);
       }
 
       &:hover .dialog-content {
+        pointer-events: auto;
         opacity: 1;
         transform: translate(0);
       }
