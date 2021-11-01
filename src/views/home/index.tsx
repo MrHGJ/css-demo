@@ -24,7 +24,7 @@ function Home() {
         {renderMenu({ title: 'ColorUI微动画', path: 'color-ui-animation', backColor: '#158bb8' })}
         {renderMenu({ title: 'transform', path: 'transform-page', backColor: '#40a070' })}
         {renderMenu({ title: 'transition', path: 'transition-page', backColor: '#61305d' })}
-        {renderMenu({ title: 'position-sticky', path: 'sticky-page', backColor: '#61305d' })}
+        {renderMenu({ title: 'position-sticky', path: 'sticky-page', backColor: '#f07b3f' })}
       </div>
     </div>
   )
