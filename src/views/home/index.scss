@@ -4,16 +4,17 @@
     flex-wrap: wrap;
     margin: 0 100px;
   }
+
   .menu {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 30px;
-    width: 150px;
+    width: 200px;
     height: 80px;
     margin: 15px;
     box-sizing: border-box;
-    border-radius: 20px;
+    border-radius: 8px;
     font-size: small;
     color: #fff;
   }
