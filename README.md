@@ -2,7 +2,7 @@
 
 ```
 // 1.克隆项目
-git clone https://github.com/MrHGJ/hello-react.git
+git clone [https://github.com/MrHGJ/hello-react.git](https://github.com/MrHGJ/css-demo.git)
 
 // 2.下载依赖包
 npm i
